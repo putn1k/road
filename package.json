@@ -1,0 +1,56 @@
+{
+  "name": "road",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Тестовое задание «Дорстроймонтаж»",
+  "author": "putn1k",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:putn1k/road.git"
+  },
+  "bugs": {
+    "url": "https://github.com/putn1k/road/issues"
+  },
+  "homepage": "https://github.com/putn1k/road",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "test": "npm run editorconfig",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "12.16.3"
+  },
+  "dependencies": {}
+}
