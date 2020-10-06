@@ -1,0 +1,34 @@
+.info__block-inner {
+  padding: 56px 16px;
+}
+
+.info__block {
+  .font-set(14px, 20px, 500, @dark, left);
+}
+
+.info__block--size {
+  color: @white;
+  background-color: @dark;
+  background-image: linear-gradient(180deg, rgba(43, 40, 49, 0.6), rgba(43, 40, 49, 0.6)), url("../img/road.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .info__block-title {
+    color: @white;
+  }
+  z-index: -1;
+  position: relative;
+}
+
+.info__block-text {
+  margin: 24px 0;
+}
+
+.info__block-link {
+  color: @dark;
+  text-decoration: underline;
+}
+
+.info__block-link--white {
+  color: @white;
+}

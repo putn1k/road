@@ -1,0 +1,72 @@
+.footer {
+  padding: 32px 16px 40px;
+  .font-set(14px, 20px, 500, @white, left);
+  background-color: @dark;
+  background-image: linear-gradient(180deg, rgba(43, 40, 49, 0.6), rgba(43, 40, 49, 0.6)),
+  url("../img/asphalt-cover.png");
+  background-position: center;
+  background-repeat: repeat;
+  & a {
+    color: @white;
+  }
+}
+
+.footer__catalog {
+  .reset-list();
+}
+
+.footer__catalog-item {
+  margin-top: 8px;
+  &:first-child {
+    margin-top: 0;
+  }
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.footer__nav {
+  .reset-list();
+  margin-top: 40px;
+}
+
+.footer__nav-item {
+  margin-top: 8px;
+  &:first-child {
+    margin-top: 0;
+  }
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.footer__contacts {
+  .reset-list();
+  margin-top: 40px;
+}
+
+.footer__contact {
+  margin-top: 16px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.footer__copyright {
+  .reset-list();
+  margin-top: 40px;
+}
+
+.footer__copyright-item {
+  margin-top: 4px;
+  &:first-child {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer__developer-link {
+  text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+.title {
+  margin: 0;
+  .font-set(16px, 24px, 700, @dark, left);
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 16px;
+  background-color: @yellow;
+  z-index: -1;
+}

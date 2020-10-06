@@ -1,0 +1,82 @@
+.advantages {
+  background-color: @white;
+  position: relative;
+  z-index: -1;
+}
+
+.advantages__inner {
+  padding: 56px 16px;
+}
+
+.advantages__list {
+  .reset-list();
+}
+
+.advantages__item {
+  position: relative;
+  background-color: @body;
+  padding: 24px 16px 24px 72px;
+  margin-top: 16px;
+  &:first-child {
+    margin-top: 24px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -6px;
+    width: 56px;
+    height: 56px;
+    background-color: @white;
+    border: 6px solid @yellow;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--quality::after {
+  background-image: url("../img/icon-quality.svg");
+}
+
+.advantages__item--gost::after {
+  background-image: url("../img/icon-gost.svg");
+}
+
+.advantages__item--certificate::after {
+  background-image: url("../img/icon-certificate.svg");
+}
+
+.advantages__item--oper::after {
+  background-image: url("../img/icon-calendar.svg");
+}
+
+.advantages__item--discount::after {
+  background-image: url("../img/icon-discount.svg");
+}
+
+.advantages__item--warranty::after {
+  background-image: url("../img/icon-warranty.svg");
+}
+
+.advantages__item--delivery::after {
+  background-image: url("../img/icon-delivery.svg");
+}
+
+.advantages__item--mount::after {
+  background-image: url("../img/icon-tools.svg");
+}
+
+.advantages__item--country::after {
+  background-image: url("../img/icon-russia.svg");
+}
+
+.advantages__item-title {
+  margin: 0;
+  .font-set(16px, 24px, 700, @dark, left);
+}
+
+.advantages__item-description {
+  margin: 0;
+  margin-top: 16px;
+  .font-set(14px, 20px, 500, @dark, left);
+}

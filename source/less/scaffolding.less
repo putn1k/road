@@ -1,0 +1,80 @@
+//--=Variables: color=--//
+@white: #ffffff;
+@black: #000000;
+@dark: #2B2831;
+@gray-dark: #3A3A47;
+@gray-medium: #858585;
+@gray-light: #B5AFAF;
+@yellow: #FFB71B;
+@yellow-light: #FFDC5E;
+@table-gray: #f9f9f9;
+@body: #f3f3f3;
+
+
+//--=Variables: width=--//
+@desktop: 680px;
+
+//--=Variables: resolutions=--//
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+//--=Mixins=--//
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button-clean() {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.font-set(@f-size: 16px, @l-height: 24px, @f-weight: 500, @t-color: @dark, @t-align: left) {
+  font-weight: @f-weight;
+  font-size: @f-size;
+  line-height: @l-height;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: @t-align;
+  color: @t-color;
+}
+
+//--=Base global styles=--//
+body {
+  margin: 0;
+  padding: 0;
+  .font-set(16px, 24px, 500, @dark, left);
+  background-color: @body;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

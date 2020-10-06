@@ -1,0 +1,57 @@
+.catalog__inner {
+  padding: 32px 16px 55px;
+}
+
+.catalog__list {
+  .reset-list();
+}
+
+.catalog__item {
+  margin-top: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.catalog__link {
+  background-color: @white;
+  .font-set(16px, 24px, 700, @dark, center);
+  padding: 88px 36px 32px;
+  position: relative;
+}
+
+.catalog__link::before {
+  content: "";
+  position: absolute;
+  bottom: 104px;
+  left: 50%;
+  margin-left: -52px;
+  width: 92px;
+  height: 92px;
+  background-color: @white;
+  border: 6px solid #FFB71B;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog__link--standart::before {
+  background-image: url("../img/icon-sign--standart.svg");
+}
+
+.catalog__link--road::before {
+  background-image: url("../img/icon-sign--road.svg");
+}
+
+.catalog__link--fence::before {
+  background-image: url("../img/icon-sign--fence.svg");
+}
+
+.catalog__link--temp::before {
+  background-image: url("../img/icon-sign--temp.svg");
+}
+
+.catalog__link--fire::before {
+  background-image: url("../img/icon-sign--fire.svg");
+}
