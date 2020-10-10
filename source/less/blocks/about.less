@@ -8,3 +8,57 @@
 .about__text {
   margin: 24px 0;
 }
+
+.about__decoration {
+  display: none;
+}
+
+@media (min-width: 820px) {
+  .about__decoration {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:816px;
+    height: 346px;
+    background-color: @dark;
+    background-image: linear-gradient(180deg, rgba(43, 40, 49, 0.5), rgba(43, 40, 49, 0.5)), url("../img/stock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: @white;
+    & span {
+      font-size: 56px;
+      line-height: 76px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .about__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 314px;
+    .container();
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about__text {
+    margin: 32px 0;
+    max-width: 576px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about__logo-icon {
+    margin-right: 24px;
+    width: 72px;
+    height: 72px;
+  }
+}

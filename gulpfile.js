@@ -9,7 +9,6 @@ var browserSync = require("browser-sync").create();
 var mincss = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
 var csscomb = require("gulp-csscomb");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
@@ -28,7 +27,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/video/**",
     "source/js/**"
   ], {
@@ -61,12 +59,6 @@ gulp.task("image", function() {
     imagemin.svgo()
   ]))
   .pipe(gulp.dest("build/img"));
-});
-
-gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg,jpeg}")
-  .pipe(webp({quality:80}))
-  .pipe(gulp.dest("build/img/webp"));
 });
 
 gulp.task("html", function () {

@@ -14,3 +14,13 @@
   background-color: @yellow;
   z-index: -1;
 }
+
+@media (min-width: @desktop) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .title::after {
+    top: 16px;
+  }
+}

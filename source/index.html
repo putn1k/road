@@ -13,6 +13,7 @@
         <div class="header__top-wrapper">
           <a class="header__logo" href="#">
             <img class="header__logo-icon" src="img/union.svg" width="16" height="16" alt="Logo">
+            <span>ДорСтройМонтаж</span>
             <img class="header__logo-text" src="img/logo-text-mobile.svg" width="118" height="12" alt="ДорСтройМонтаж">
           </a>
           <button class="header__menu-button" type="button">
@@ -32,17 +33,21 @@
                   <li class="header__submenu-item"><a href="#" class="header__menu-link header__menu-link--submenu">Знаки пожарной безопасности</a></li>
                 </ul>
               </li>
-              <li class="header__menu-item"><a href="#" class="header__menu-link">Прайс</a></li>
-              <li class="header__menu-item"><a href="#" class="header__menu-link">Информация</a></li>
-              <li class="header__menu-item"><a href="#" class="header__menu-link">Доставка</a></li>
-              <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--main">Прайс</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--main">Информация</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--main">Доставка</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--main">Контакты</a></li>
             </ul>
           </nav>
-          <a href="#" class="header__link" download>Скачать прайс</a>
-          <p class="header__contacts">
-            <span class="header__contact">8 (8412) 71-03-30,</span>
-            <span class="header__contact">8 (8412) 25-70-04</span>
-          </p>
+          <div class="header__link-wrapper">
+            <a href="#" class="header__link" download>Скачать прайс</a>
+          </div>
+          <div class="header__contacts-wrapper">
+            <p class="header__contacts">
+              <span class="header__contact">8 (8412) 71-03-30,</span>
+              <span class="header__contact">8 (8412) 25-70-04</span>
+            </p>
+          </div>
         </div>
       </div>
     </header>
@@ -50,7 +55,7 @@
     <article class="promo">
       <h1 class="visually-hidden">ДорСтройМонтаж</h1>
       <div class="promo__content">
-        <p class="promo__tagline"><b>Производство<br>и продажа <span>дорожных&nbsp;знаков</span><br>в Пензе</b></p>
+        <p class="promo__tagline"><b>Производство и&nbsp;продажа<br> <span>дорожных&nbsp;знаков</span><br>в Пензе</b></p>
         <p class="promo__description">
           <span>Производство в соответствии ГОСТу.</span><br>
           <span>Доставка по всей территории России.</span>
@@ -59,7 +64,7 @@
       </div>
       <div class="promo__bg">
         <div class="promo__overlay"></div>
-        <video height="100%" loop="loop" loop="loop" preload="auto" autoplay muted>
+        <video loop="loop" loop="loop" preload="auto" autoplay muted>
           <source src="video/video.mp4" type="video/mp4" />
         </video>
       </div>
@@ -94,6 +99,8 @@
           <h2 class="price__title title">Прайс-лист</h2>
           <p class="price__text">Наша продукция соответствует техническому регламенту Таможенного союза ТР ТС 014/2011 «О безопасности автомобильных дорог» и имеет соответствующий сертификат.</p>
           <p class="price__text">Все дорожные знаки производятся в четком соответствии ГОСТ 52290-2004 и ГОСТ 32945-2014</p>
+          <div class="price__decor-text">
+          </div>
           <div class="price__table-wrapper">
             <table class="price__table">
               <thead>
@@ -224,6 +231,7 @@
         <div class="advantages__inner">
           <h2 class="visually-hidden">Преимущества</h2>
           <h3 class="advantages__title title">Почему стоит выбрать нас?</h3>
+          <div class="advantages__decor-text"></div>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--quality">
               <h4 class="advantages__item-title">Высокое качество</h4>
@@ -267,88 +275,95 @@
 
       <section class="about">
         <div class="about__inner">
-          <h2 class="about__title title">О нас</h2>
-          <p class="about__text">Компания ООО Дорстроймонтаж занимается изготовлением дорожных знаков всех видов. Здесь вы можете заказать дорожные знаки II и III типоразмеров со светоотражающей поверхностью из световозвращающих пленок типа А, Б или В, а также знаки индивидуального проектирования. Грамотно налаженное производство позволяет изготавливать и доставлять качественную продукцию в максимально короткие сроки.</p>
+          <div class="about__description">
+            <h2 class="about__title title">О нас</h2>
+            <p class="about__text">Компания ООО Дорстроймонтаж занимается изготовлением дорожных знаков всех видов. Здесь вы можете заказать дорожные знаки II и III типоразмеров со светоотражающей поверхностью из световозвращающих пленок типа А, Б или В, а также знаки индивидуального проектирования. Грамотно налаженное производство позволяет изготавливать и доставлять качественную продукцию в максимально короткие сроки.</p>
+          </div>
+          <div class="about__decoration">
+            <img class="about__logo-icon" src="img/union.svg" width="16" height="16" alt="Logo">
+            <span>ДорСтройМонтаж</span>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <ul class="footer__catalog">
-        <li class="footer__catalog-item">
-          <a href="#">Стандартные дорожные знаки</a>
-        </li>
-        <li class="footer__catalog-item">
-          <a href="#">Светодиодные дорожные знаки</a>
-        </li>
-        <li class="footer__catalog-item">
-          <a href="#">Заградительные светодиодные знаки</a>
-        </li>
-        <li class="footer__catalog-item">
-          <a href="#">Временные дорожные знаки</a>
-        </li>
-        <li class="footer__catalog-item">
-          <a href="#">Знаки пожарной безопасности</a>
-        </li>
-      </ul>
-      <ul class="footer__nav">
-        <li class="footer__nav-item">
-          <a href="#">Прайс</a>
-        </li>
-        <li class="footer__nav-item">
-          <a href="#">Информация</a>
-        </li>
-        <li class="footer__nav-item">
-          <a href="#">Доставка</a>
-        </li>
-        <li class="footer__nav-item">
-          <a href="#">Политика конфиденциальности</a>
-        </li>
-      </ul>
-      <ul class="footer__contacts">
-        <li class="footer__contact">Адрес:<br>г. Пенза, ул. Космодемьянской, 5</li>
-        <li class="footer__contact">Телефон:<br>8 (8412) 71-03-30, 25-70-04</li>
-        <li class="footer__contact">E-mail:<br>info@dsm58.ru</li>
-      </ul>
-      <ul class="footer__copyright">
-        <li class="footer__copyright-item">
-          <a class="footer__logo" href="#">
-            <img class="footer__logo-icon" src="img/union.svg" width="16" height="16" alt="Logo">
-            <img class="footet__logo-text" src="img/logo-text-mobile.svg" width="118" height="12" alt="ДорСтройМонтаж">
-          </a>
-        </li>
-        <li class="footer__copyright-item">© 2019 ДорСтройМонтаж.</li>
-        <li class="footer__copyright-item">Разработка сайта - <a href="#" class="footer__developer-link" target="_blank">onlinebees.ru</a></li>
-      </ul>
+      <div class="footer__inner">
+        <ul class="footer__catalog">
+          <li class="footer__catalog-item">
+            <a href="#">Стандартные дорожные знаки</a>
+          </li>
+          <li class="footer__catalog-item">
+            <a href="#">Светодиодные дорожные знаки</a>
+          </li>
+          <li class="footer__catalog-item">
+            <a href="#">Заградительные светодиодные знаки</a>
+          </li>
+          <li class="footer__catalog-item">
+            <a href="#">Временные дорожные знаки</a>
+          </li>
+          <li class="footer__catalog-item">
+            <a href="#">Знаки пожарной безопасности</a>
+          </li>
+        </ul>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#">Прайс</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Информация</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__contact">Адрес:<br>г. Пенза, ул. Космодемьянской, 5</li>
+          <li class="footer__contact">Телефон:<br>8 (8412) 71-03-30, 25-70-04</li>
+          <li class="footer__contact">E-mail:<br>info@dsm58.ru</li>
+        </ul>
+        <ul class="footer__copyright">
+          <li class="footer__copyright-item">
+            <a class="footer__logo" href="#">
+              <img class="footer__logo-icon" src="img/union.svg" width="16" height="16" alt="Logo">
+              <img class="footer__logo-text" src="img/logo-text-mobile.svg" width="118" height="12" alt="ДорСтройМонтаж">
+            </a>
+          </li>
+          <li class="footer__copyright-item">© 2019 ДорСтройМонтаж.</li>
+          <li class="footer__copyright-item">Разработка сайта - <a href="#" class="footer__developer-link" target="_blank">onlinebees.ru</a></li>
+        </ul>
+      </div>
     </footer>
 
-    <script type="text/javascript">
-      var nav = document.querySelector(".header__top");
-      var cat = document.querySelector(".header__catalog")
-      var navBtn = document.querySelector(".header__menu-button");
-      var catBtn = document.querySelector(".header__submenu-button");
-      nav.classList.remove("header__top--nojs");
-      navBtn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        if (nav.classList.contains("header__top--closed")) {
-          nav.classList.remove("header__top--closed");
-          nav.classList.add("header__top--open");
-        } else {
-          nav.classList.add("header__top--closed");
-          nav.classList.remove("header__top--open");
-        }
-      });
-      cat.classList.remove("header__catalog--nojs");
-      catBtn.onclick =  function() {
-        if (cat.classList.contains("header__catalog--closed")) {
-          cat.classList.remove("header__catalog--closed");
-          cat.classList.add("header__catalog--open");
-        } else {
-          cat.classList.add("header__catalog--closed");
-          cat.classList.remove("header__catalog--open");
-        }
-      };
-    </script>
+    <section class="popup">
+      <h2 class="popup__title title">Оставьте заявку</h2>
+      <p class="popup__text">Внесите данные в форму</p>
+      <form class="popup__form" method="post">
+        <label class="visually-hidden" for="popup__form-name">Введите имя:</label>
+        <input class="popup__input" type="text" name="Name" id="popup__form-name" placeholder="Ваше имя">
+        <label class="visually-hidden" for="popup__form-phone">Введите телефон:</label>
+        <input class="popup__input" type="tel" name="Phone" id="popup__form-phone" placeholder="Ваш телефон">
+        <label class="visually-hidden" for="popup__form-email">Введите электронную почту:</label>
+        <input class="popup__input" type="email" name="E-Mail" id="popup__form-email"  placeholder="Ваш e-mail" required>
+        <label class="visually-hidden" for="">Введите текст заявки:</label>
+        <textarea class="popup__input" placeholder="Текст заявки*" rows="6" name="Request" required></textarea>
+        <p class="popup__description">*Важно! Заявка оставляется в форме:<br>1.&nbsp;Название. 2.&nbsp;Типоразмер знака. 3.&nbsp;Тип плёнки 4.&nbsp;Временный/постоянный. 5.&nbsp;Кол-во</p>
+        <button class="popup__button popup__button--attach" type="button" name="button">Прикрепить файл</button>
+        <button class="popup__button popup__button--submit button" type="submit" name="button">Отправить</button>
+        <p class="popup__description">Нажимая кнопку, вы даете согласие на обработку
+          <a href="#"> персональных данных</a>
+        </p>
+      </form>
+      <button class="popup__button popup__button--close" type="button" name="button">
+        <span class="visually-hidden">Закрыть</span></button>
+    </section>
+
+    <div class="overlay"></div>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
 
   </body>
 </html>

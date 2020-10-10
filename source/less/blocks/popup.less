@@ -1,0 +1,171 @@
+.popup {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 280px;
+  padding: 20px 10px 20px;
+  margin-left: -150px;
+  background-color: @white;
+  display: none;
+  z-index: 2;
+  box-shadow: 0px 3px 10px 5px @dark;
+}
+
+.popup--show {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__title {
+  margin-bottom: 12px;
+}
+
+.popup__text {
+  .font-set(14px, 20px, 500, @dark, left);
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.popup__description {
+  .font-set(10px, 14px, 500, @dark, left);
+  margin: 0;
+  & a {
+    text-decoration: underline;
+  }
+  & a:visited {
+    color: @dark;
+  }
+  & a:hover,
+  & a:focus {
+    text-decoration: none;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__input {
+  margin-bottom: 12px;
+  border-radius: 20px;
+  .font-set(14px, 20px, 500, @gray-medium, left);
+  padding: 8px 16px;
+  border: 1px solid @gray-medium;
+  outline: none;
+  color: @dark;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: @yellow;
+  }
+}
+
+.popup__input--error {
+  border: 1px solid red;
+}
+
+.popup__input--disabled {
+  border: 1px solid @gray-light;
+}
+
+.popup__form textarea {
+  resize: none;
+  margin-bottom: 8px;
+  border-radius: 20px;
+}
+
+.popup__input + .popup__description {
+  margin-bottom: 12px;
+}
+
+.popup__button--attach {
+  .button-clean();
+  margin-bottom: 12px;
+  text-align: left;
+  text-decoration: underline;
+  outline: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.popup__button--submit {
+  margin-bottom: 8px;
+  height: 40px;
+  outline: none;
+}
+
+.popup__button--close {
+  .button-clean();
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+@media (min-width: @desktop) {
+  .popup {
+    width: 392px;
+    padding: 40px 32px 60px;
+    margin-left: -228px;
+  }
+
+  .popup__title {
+    margin-bottom: 24px;
+  }
+
+  .popup__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .popup__input {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .popup__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .popup__description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .popup__input + .popup__description {
+    margin-bottom: 24px;
+  }
+
+  .popup__button--attach {
+    margin-bottom: 24px;
+  }
+
+  .popup__button--submit {
+    margin-bottom: 16px;
+  }
+}

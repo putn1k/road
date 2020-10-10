@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  min-height: 384px;
+  min-height: 372px;
   overflow: hidden;
 }
 
@@ -13,6 +13,9 @@
   height: 100%;
   background-color: @gray-medium;
   text-align: center;
+  & video {
+    height: 100%;
+  }
 }
 
 .promo__overlay {
@@ -46,7 +49,35 @@
 }
 
 .promo__button {
+  width: 180px;
   height: 40px;
   margin-top: 32px;
-  width: 180px;
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    height: 796px;
+  }
+
+  .promo__bg {
+    & video {
+      height: 1080px;
+    }
+  }
+
+  .promo__tagline {
+    margin-top: 170px;
+    & b {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  .promo__description {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .promo__button {
+    margin-top: 48px;
+  }
 }

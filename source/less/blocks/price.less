@@ -5,6 +5,7 @@
 .price__text {
   margin: 0;
   margin-top: 24px;
+  .font-set(14px, 20px, 500, @dark, left);
 }
 
 .price__table-wrapper {
@@ -14,9 +15,13 @@
 .price__table {
   border-collapse: collapse;
   margin-top: 24px;
-  width: 1416px;
+  width: 1415px;
   vertical-align: middle;
   text-align: center;
+}
+
+.price__table tbody tr:hover {
+  border: 2px solid @yellow;
 }
 
 .price__table thead {
@@ -38,6 +43,10 @@
 
 .price__first-cell {
   padding: 28px 0;
+}
+
+td {
+  border: 1px @body solid;
 }
 
 .price__table td:first-child {
@@ -66,6 +75,10 @@
   display: inline-block;
   color: @dark;
   text-decoration: underline;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .price__link::before {
@@ -77,4 +90,39 @@
   background-image: url("../img/icon-price.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.price__decor-text {
+  display: none;
+}
+
+@media (min-width: @desktop) {
+  .price__inner {
+    .container();
+  }
+
+  .price__text {
+    max-width: 936px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1650px) {
+    .price__decor-text {
+      display: block;
+      position: relative;
+      &::after {
+        content: "Наши цены";
+        font-size: 96px;
+        line-height: 100px;
+        font-weight: 700;
+        opacity: 0.1;
+        color: @gray-medium;
+        position: absolute;
+        top: 267px;
+        right: -350px;
+        transform: rotate(90deg);
+      }
+    }
+  }
 }

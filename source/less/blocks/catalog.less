@@ -20,6 +20,10 @@
   .font-set(16px, 24px, 700, @dark, center);
   padding: 88px 36px 32px;
   position: relative;
+  &:hover,
+  &:focus {
+    background-color: @yellow;
+  }
 }
 
 .catalog__link::before {
@@ -54,4 +58,26 @@
 
 .catalog__link--fire::before {
   background-image: url("../img/icon-sign--fire.svg");
+}
+
+@media (min-width: @desktop) {
+  .catalog__inner {
+    .container();
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__link {
+    width: 192px;
+  }
 }

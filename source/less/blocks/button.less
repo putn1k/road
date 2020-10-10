@@ -3,6 +3,11 @@
   background-color: @yellow;
   text-transform: uppercase;
   border-radius: 20px;
+  outline: none;
   .font-set(12px, 24px, 700, @dark, center);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: @yellow-light;
+  }
 }
